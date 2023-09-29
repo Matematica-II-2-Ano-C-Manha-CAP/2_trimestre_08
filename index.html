@@ -54,7 +54,50 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./img/Angular.svg" alt="Primeiro livro da estante"></div>
+      <div class="swiper-slide"><img src="./img/Portugol.svg" alt="Segundo livro"></div>
+      <div class="swiper-slide"><img src="./img/Javascript.svg" alt="Terceiro livro"></div>
+      <div class="swiper-slide"><img src="./img/ApacheKafka.svg"></div>
+      <div class="swiper-slide"><img src="./img/Tuning.svg"></div>
+      <div class="swiper-slide"><img src="./img/Arquitetura.svg"></div>
+      <div class="swiper-slide"><img src="./img/Nodejs.svg"></div>
+      <div class="swiper-slide"><img src="./img/ReactNative.svg"></div>
+      <div class="swiper-slide"><img src="./img/Gestão.svg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/Liderança.svg"></div>
+      <div class="swiper-slide"><img src="./img/Gestão2.svg"></div>
+      <div class="swiper-slide"><img src="./img/MetricasAgeis.svg"></div>
+      <div class="swiper-slide"><img src="./img/Construct2.svg" alt=""></div>
+      <div class="swiper-slide"><img src="./img/UX.svg"></div>
+      <div class="swiper-slide"><img src="./img/Guia Front-end.svg"></div>
+      <div class="swiper-slide"><img src="./img/MEAN.svg"></div>
+      <div class="swiper-slide"><img src="./img/Acessibilidade.svg"></div>
+      <div class="swiper-slide"><img src="./img/Angular_2.svg"></div>
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+  slidesPerView:3,
+});
+    </script>
 </body>
 
 </html>
