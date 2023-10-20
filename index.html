@@ -57,6 +57,9 @@
         <!-- Slider main container -->
 <div class="swiper">
     <!-- Additional required wrapper -->
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    
     <div class="swiper-wrapper">
       <!-- Slides -->
       <div class="swiper-slide"><img src="./img/Angular.svg" alt="Primeiro livro da estante"></div>
@@ -79,15 +82,31 @@
       <div class="swiper-slide"><img src="./img/Angular_2.svg"></div>
 
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+    
   
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+
+    
+  </div>
+
+  <div class="card">
+    <div class="card__descricao">
+        <div class="descricao>">
+            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+             <p class="descricao__texto">Construindo um aplicativo integrado a plataforma GooGle</p>
+
+        </div>
+        <img class="descricao__imagem" src="./img/Angular_2.svg">
+    </div>
+    <div class="card__botao">
+        <ul class="botoes">
+            <li class="botao__item"><img src="./img/Favoritos (1).svg"></li>
+        </ul>
+    </div>
   </div>
     </section>
 
@@ -96,6 +115,10 @@
         const swiper = new Swiper('.swiper', {
   spaceBetween: 10,
   slidesPerView:3,
+  pagination:{
+    el:'swiper-pagination',
+    type:'bullets',
+  },
 });
     </script>
 </body>
